@@ -16,14 +16,22 @@ class WelcomeViewController: UIViewController {
     
     }
     
-    let gradient: CAGradientLayer = CAGradientLayer()
+    override func viewWillAppear(_ animated: Bool) {
+        setGradientBackground()
+        super.viewWillAppear(animated)
+    }
     
-    gradient.colors = [UIColor.black.cgColor, UIColor.blue.cgColor]
-    gradient.locations = [0.0 , 1.0]
-    gradient.startPoint = CGPoint(x : 0.0, y : 0)
-    gradient.endPoint = CGPoint(x :0.0, y: 0.5) // you need to play with 0.15 to adjust gradient vertically
-    gradient.frame = view.bounds
-    view.layer.addSublayer(gradient)
+    private func setGradientBackground() {
+        let colorTop =  UIColor(red: 190.0/255.0, green: 130.0/255.0, blue: 140.0/255.0, alpha: 1.0).cgColor
+        let colorBottom = UIColor(red: 130.0/255.0, green: 150.0/255.0, blue: 210.0/255.0, alpha: 1.0).cgColor
+                    
+        let gradientLayer = CAGradientLayer()
+        gradientLayer.colors = [colorTop, colorBottom]
+        gradientLayer.locations = [0.0, 1.0]
+        gradientLayer.frame = self.view.bounds
+                
+        self.view.layer.insertSublayer(gradientLayer, at:0)
+    }
     
     
     // MARK: - Navigation
