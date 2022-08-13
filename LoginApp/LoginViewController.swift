@@ -19,43 +19,29 @@ class LoginViewController: UIViewController {
     private let userName = "Bogdan"
     private let password = "qwe123"
     
-    //MARK: - LifeCycleMethods
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-    
     //MARK: - IBActions
     
     @IBAction func logInButtonPressed() {
         if userNameTF.text == userName, passwordTF.text == password {
-            performSegue(withIdentifier: "toWelcomeScreen", sender: nil)
-        } else {
-            let alert = UIAlertController(
-                title: "Invalid login or password",
-                message: "Please, enter correct login and password",
-                preferredStyle: .alert
-            )
-            let okButton = UIAlertAction(title: "OK", style: .cancel)
-            alert.addAction(okButton)
-            self.present(alert, animated: true)
-        }
+            performSegue(withIdentifier: "toWelcomeScreen", sender: nil) } else {
+                showForgotten(title: "Wrong username or password!", messege: "Please enter correct credentials")
+            }
     }
     
     @IBAction func forgotUserNamePressed() {
-        showForgotten(item: "username", hint: userName)
+        showForgotten(title: "Ooops!", messege: "Your username is \(userName) 😉")
     }
     
     @IBAction func forgotPasswordPressed() {
-        showForgotten(item: "password", hint: password)
+        showForgotten(title: "Ooops!", messege: "Your password is \(password) 😉")
     }
     
     //MARK: - Private methods
     
-    private func showForgotten(item: String, hint: String) {
+    private func showForgotten(title: String, messege: String) {
         let alert = UIAlertController(
-            title: "Ooops!",
-            message: "Your \(item) is \(hint) 😉",
+            title: title,
+            message: messege,
             preferredStyle: .alert
         )
         let okButton = UIAlertAction(title: "OK", style: .cancel)
@@ -67,7 +53,7 @@ class LoginViewController: UIViewController {
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super .touchesBegan(touches, with: event)
-        self.view.endEditing(true)
+        view.endEditing(true)
     }
     
     //MARK: - Navigation
