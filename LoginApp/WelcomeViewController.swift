@@ -14,12 +14,17 @@ class WelcomeViewController: UIViewController {
     @IBOutlet weak var welcomeLabel: UILabel!
     @IBOutlet weak var logOutButton: UIButton!
     
+    //MARK: - Public Properties
+
+    var userName = ""
+    
     //MARK: - LifeCycleMethods
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         logOutButton.titleLabel?.textColor = .white
+        welcomeLabel.text = "Welcome, \(userName)!"
     }
     
     override func viewWillAppear(_ animated: Bool) {

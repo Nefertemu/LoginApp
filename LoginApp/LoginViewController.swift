@@ -20,7 +20,7 @@ class LoginViewController: UIViewController {
     private let password = "12345"
     
     //MARK: - LifeCycleMethods
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -28,7 +28,8 @@ class LoginViewController: UIViewController {
     //MARK: - IBActions
     
     @IBAction func logInButtonPressed() {
-        if userNameTF.text == userName, passwordTF.text == password { performSegue(withIdentifier: "toWelcomeScreen", sender: nil)
+        if userNameTF.text == userName, passwordTF.text == password {
+            performSegue(withIdentifier: "toWelcomeScreen", sender: nil)
         } else {
             let alert = UIAlertController(
                 title: "Invalid login or password",
@@ -37,7 +38,6 @@ class LoginViewController: UIViewController {
             )
             let okButton = UIAlertAction(title: "OK", style: .cancel)
             alert.addAction(okButton)
-            
             self.present(alert, animated: true)
         }
     }
@@ -66,8 +66,15 @@ class LoginViewController: UIViewController {
     
     //MARK: - Navigation
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let welcomeVC = segue.destination as? WelcomeViewController else {
+            return
+        }
+        welcomeVC.userName = userName
+    }
+    
     @IBAction func unwindSegue(_ segue: UIStoryboardSegue) {
     }
-
+    
 }
 

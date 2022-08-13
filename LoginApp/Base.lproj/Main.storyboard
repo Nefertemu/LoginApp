@@ -17,22 +17,22 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="OW9-bC-VL9">
-                                <rect key="frame" x="30" y="150" width="315" height="111"/>
+                                <rect key="frame" x="30" y="135" width="315" height="100"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PCJ-YC-Zgu">
-                                        <rect key="frame" x="0.0" y="0.0" width="315" height="39.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="315" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="soA-fI-kAr">
-                                        <rect key="frame" x="0.0" y="71.5" width="315" height="39.5"/>
+                                        <rect key="frame" x="0.0" y="66" width="315" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CSD-nS-AWY">
-                                <rect key="frame" x="133" y="308.5" width="109" height="50"/>
+                                <rect key="frame" x="133" y="282.5" width="109" height="62"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Log In">
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="30"/>
@@ -43,10 +43,10 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="Irl-lA-FUT">
-                                <rect key="frame" x="16" y="383.5" width="343" height="27.5"/>
+                                <rect key="frame" x="16" y="369.5" width="343" height="34.5"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qev-vT-pIN">
-                                        <rect key="frame" x="0.0" y="0.0" width="159" height="27.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="159" height="34.5"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Forgot User Name?">
                                             <fontDescription key="titleFontDescription" type="system" pointSize="15"/>
@@ -56,7 +56,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TTd-b3-tLq">
-                                        <rect key="frame" x="184" y="0.0" width="159" height="27.5"/>
+                                        <rect key="frame" x="184" y="0.0" width="159" height="34.5"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Forgot Password?">
                                             <fontDescription key="titleFontDescription" type="system" pointSize="15"/>
@@ -73,13 +73,13 @@
                         <constraints>
                             <constraint firstItem="Irl-lA-FUT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="N3X-Nc-1vQ"/>
                             <constraint firstItem="CSD-nS-AWY" firstAttribute="top" secondItem="OW9-bC-VL9" secondAttribute="bottom" constant="47.5" id="O9E-X7-kK5"/>
-                            <constraint firstItem="CSD-nS-AWY" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Z8k-1R-7R6"/>
+                            <constraint firstItem="CSD-nS-AWY" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-20" id="Z8k-1R-7R6"/>
                             <constraint firstItem="Irl-lA-FUT" firstAttribute="top" secondItem="CSD-nS-AWY" secondAttribute="bottom" constant="25" id="fSZ-Vm-nEp"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OW9-bC-VL9" secondAttribute="trailing" constant="30" id="gck-tg-wn5"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Irl-lA-FUT" secondAttribute="bottom" constant="256" id="jfs-sL-lz5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Irl-lA-FUT" secondAttribute="bottom" constant="263" id="jfs-sL-lz5"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Irl-lA-FUT" secondAttribute="trailing" constant="16" id="k7Y-6T-7MC"/>
                             <constraint firstItem="OW9-bC-VL9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="kkr-li-y8D"/>
-                            <constraint firstItem="OW9-bC-VL9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="oNc-MW-Ecz"/>
+                            <constraint firstItem="OW9-bC-VL9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="135" id="oNc-MW-Ecz"/>
                             <constraint firstItem="CSD-nS-AWY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sem-Ot-f9S"/>
                         </constraints>
                     </view>
@@ -101,17 +101,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="lF4-Un-6ZF">
-                                <rect key="frame" x="152" y="120" width="71" height="136"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="lF4-Un-6ZF">
+                                <rect key="frame" x="152" y="120" width="71" height="160"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vhA-g9-Hyc">
-                                        <rect key="frame" x="0.0" y="0.0" width="71" height="36"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="71" height="60"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="👋" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Xn-CJ-u8X">
-                                        <rect key="frame" x="0.0" y="76" width="71" height="60"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="👋" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Xn-CJ-u8X">
+                                        <rect key="frame" x="0.0" y="100" width="71" height="60"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
