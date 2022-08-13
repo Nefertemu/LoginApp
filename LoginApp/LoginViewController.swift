@@ -16,8 +16,8 @@ class LoginViewController: UIViewController {
     
     //MARK: - Public Properties
     
-    private let userName = "bogdaggi"
-    private let password = "12345"
+    private let userName = "1"
+    private let password = "2"
     
     //MARK: - LifeCycleMethods
     
@@ -63,6 +63,12 @@ class LoginViewController: UIViewController {
         self.present(alert, animated: true)
     }
     
+    //MARK: - Overridden methods
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super .touchesBegan(touches, with: event)
+        self.view.endEditing(true)
+    }
     
     //MARK: - Navigation
     
@@ -74,6 +80,8 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func unwindSegue(_ segue: UIStoryboardSegue) {
+        userNameTF.text = ""
+        passwordTF.text = ""
     }
     
 }

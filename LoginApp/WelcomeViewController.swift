@@ -22,7 +22,6 @@ class WelcomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         logOutButton.titleLabel?.textColor = .white
         welcomeLabel.text = "Welcome, \(userName)!"
     }
