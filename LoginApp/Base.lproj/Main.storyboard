@@ -80,7 +80,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2805.5999999999999" y="79.610194902548727"/>
+            <point key="canvasLocation" x="2810" y="80"/>
         </scene>
         <!--Welcome View Controller-->
         <scene sceneID="C3n-kT-WVh">
@@ -91,7 +91,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="lF4-Un-6ZF">
-                                <rect key="frame" x="152" y="150" width="71" height="136"/>
+                                <rect key="frame" x="152" y="120" width="71" height="136"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vhA-g9-Hyc">
                                         <rect key="frame" x="0.0" y="0.0" width="71" height="36"/>
@@ -123,20 +123,21 @@
                         <constraints>
                             <constraint firstItem="DoK-o4-tDQ" firstAttribute="leading" secondItem="lXt-iM-iLE" secondAttribute="leading" constant="122.5" id="1QT-Ew-kKa"/>
                             <constraint firstItem="lXt-iM-iLE" firstAttribute="trailing" secondItem="DoK-o4-tDQ" secondAttribute="trailing" constant="122.5" id="1ul-9q-nAd"/>
-                            <constraint firstItem="lF4-Un-6ZF" firstAttribute="top" secondItem="lXt-iM-iLE" secondAttribute="top" constant="150" id="Jvz-A1-mds"/>
+                            <constraint firstItem="lF4-Un-6ZF" firstAttribute="top" secondItem="lXt-iM-iLE" secondAttribute="top" constant="120" id="Jvz-A1-mds"/>
                             <constraint firstItem="lF4-Un-6ZF" firstAttribute="centerX" secondItem="nG2-fI-hvt" secondAttribute="centerX" id="cro-WT-Rpo"/>
                             <constraint firstItem="lXt-iM-iLE" firstAttribute="bottom" secondItem="DoK-o4-tDQ" secondAttribute="bottom" constant="100" id="u2x-kA-C0d"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="slo-z8-9VE"/>
                     <connections>
+                        <outlet property="logOutButton" destination="DoK-o4-tDQ" id="Mct-cm-n8D"/>
                         <outlet property="welcomeLabel" destination="vhA-g9-Hyc" id="M8Q-z8-cSZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="irm-Qm-j1e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="U4b-b1-s4a" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="3544.8000000000002" y="79.610194902548727"/>
+            <point key="canvasLocation" x="3570" y="80"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="3FJ-kb-sOq">
@@ -153,7 +154,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bd2-dY-E2E" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1948" y="80"/>
+            <point key="canvasLocation" x="2049" y="80"/>
         </scene>
     </scenes>
     <resources>

@@ -9,17 +9,25 @@ import UIKit
 
 class WelcomeViewController: UIViewController {
     
+    //MARK: - IBOutlets
+    
     @IBOutlet weak var welcomeLabel: UILabel!
+    @IBOutlet weak var logOutButton: UIButton!
+    
+    //MARK: - LifeCycleMethods
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    
+        
+        logOutButton.titleLabel?.textColor = .white
     }
     
     override func viewWillAppear(_ animated: Bool) {
         setGradientBackground()
         super.viewWillAppear(animated)
     }
+    
+    //MARK: Private methods
     
     private func setGradientBackground() {
         let colorTop =  UIColor(red: 190.0/255.0, green: 130.0/255.0, blue: 140.0/255.0, alpha: 1.0).cgColor
