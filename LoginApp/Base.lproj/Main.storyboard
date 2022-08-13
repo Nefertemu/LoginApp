@@ -38,7 +38,8 @@
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="30"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="mc6-kb-qde" kind="showDetail" id="kTX-qR-yWl"/>
+                                    <action selector="logInButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="rpX-va-cE4"/>
+                                    <segue destination="mc6-kb-qde" kind="showDetail" identifier="toWelcomeScreen" id="kTX-qR-yWl"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="Irl-lA-FUT">
@@ -50,6 +51,9 @@
                                         <buttonConfiguration key="configuration" style="plain" title="Forgot User Name?">
                                             <fontDescription key="titleFontDescription" type="system" pointSize="15"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="forgotUserNamePressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="MqV-D9-Jrz"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TTd-b3-tLq">
                                         <rect key="frame" x="184" y="0.0" width="159" height="27.5"/>
@@ -57,6 +61,9 @@
                                         <buttonConfiguration key="configuration" style="plain" title="Forgot Password?">
                                             <fontDescription key="titleFontDescription" type="system" pointSize="15"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="forgotPasswordPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="ivA-qR-rE3"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -77,6 +84,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ach-Al-Qdw"/>
+                    <connections>
+                        <outlet property="passwordTF" destination="soA-fI-kAr" id="nVT-tn-hfS"/>
+                        <outlet property="userNameTF" destination="PCJ-YC-Zgu" id="76f-a5-HgU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
