@@ -16,8 +16,8 @@ class LoginViewController: UIViewController {
     
     //MARK: - Public Properties
     
-    private let userName = "1"
-    private let password = "2"
+    private let userName = "Bogdan"
+    private let password = "qwe123"
     
     //MARK: - LifeCycleMethods
     
@@ -55,7 +55,7 @@ class LoginViewController: UIViewController {
     private func showForgotten(item: String, hint: String) {
         let alert = UIAlertController(
             title: "Ooops!",
-            message: "Your \(item) is \(hint)",
+            message: "Your \(item) is \(hint) 😉",
             preferredStyle: .alert
         )
         let okButton = UIAlertAction(title: "OK", style: .cancel)
