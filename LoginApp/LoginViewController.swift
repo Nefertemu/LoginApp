@@ -17,7 +17,7 @@ class LoginViewController: UIViewController {
     //MARK: - Public Properties
     
     private let userName = "Bogdan"
-    private let password = "qwe123"
+    private let password = "1"
     
     //MARK: - IBActions
     
