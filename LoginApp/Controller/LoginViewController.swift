@@ -65,7 +65,8 @@ final class LoginViewController: UIViewController {
         for viewController in viewControllers {
             if let welcomeVC = viewController as? WelcomeViewController {
                 welcomeVC.userName = userName
-            } else if let userVC = viewController as? UserViewController {
+            } else if let navigationVC = viewController as? UINavigationController {
+                guard let userVC = navigationVC.topViewController as? UserViewController else { return }
                 userVC.userName = userName
             }
         }

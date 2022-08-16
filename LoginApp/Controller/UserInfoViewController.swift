@@ -1,5 +1,5 @@
 //
-//  TabBarViewController.swift
+//  UserInfoViewController.swift
 //  LoginApp
 //
 //  Created by Богдан Анищенков on 16.08.2022.
@@ -7,16 +7,7 @@
 
 import UIKit
 
-class TabBarViewController: UITabBarController {
-    
-    var userName = ""
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        tabBar.items?[1].title = userName
-    }
-    
+final class UserInfoViewController: UIViewController {
 
     /*
     // MARK: - Navigation

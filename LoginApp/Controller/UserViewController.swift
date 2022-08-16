@@ -7,15 +7,15 @@
 
 import UIKit
 
-class UserViewController: UIViewController {
+final class UserViewController: UIViewController {
     
     var userName = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.navigationItem.title = userName
     }
-    
 
     /*
     // MARK: - Navigation
