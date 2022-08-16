@@ -14,6 +14,9 @@
 		43685F6A28A7983900957566 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43685F6928A7983900957566 /* Assets.xcassets */; };
 		43685F6D28A7983900957566 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43685F6B28A7983900957566 /* LaunchScreen.storyboard */; };
 		43685F7528A7A2BA00957566 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43685F7428A7A2BA00957566 /* WelcomeViewController.swift */; };
+		436E66CE28ABFBC1006A1170 /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436E66CD28ABFBC1006A1170 /* NavigationViewController.swift */; };
+		43C9909B28ABB1930070F347 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C9909A28ABB1930070F347 /* UserViewController.swift */; };
+		43C9909D28ABBEC40070F347 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C9909C28ABBEC40070F347 /* TabBarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		43685F6C28A7983900957566 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		43685F6E28A7983900957566 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		43685F7428A7A2BA00957566 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		436E66CD28ABFBC1006A1170 /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
+		43C9909A28ABB1930070F347 /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
+		43C9909C28ABBEC40070F347 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +64,43 @@
 		43685F5F28A7983400957566 /* LoginApp */ = {
 			isa = PBXGroup;
 			children = (
+				43C9909728AB9F570070F347 /* Model */,
+				43C9909828AB9F610070F347 /* View */,
+				43C9909928AB9F660070F347 /* Controller */,
 				43685F6028A7983400957566 /* AppDelegate.swift */,
 				43685F6228A7983400957566 /* SceneDelegate.swift */,
-				43685F6428A7983400957566 /* LoginViewController.swift */,
-				43685F7428A7A2BA00957566 /* WelcomeViewController.swift */,
-				43685F6628A7983400957566 /* Main.storyboard */,
 				43685F6928A7983900957566 /* Assets.xcassets */,
-				43685F6B28A7983900957566 /* LaunchScreen.storyboard */,
 				43685F6E28A7983900957566 /* Info.plist */,
 			);
 			path = LoginApp;
+			sourceTree = "<group>";
+		};
+		43C9909728AB9F570070F347 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		43C9909828AB9F610070F347 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				43685F6628A7983400957566 /* Main.storyboard */,
+				43685F6B28A7983900957566 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		43C9909928AB9F660070F347 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				43C9909C28ABBEC40070F347 /* TabBarViewController.swift */,
+				436E66CD28ABFBC1006A1170 /* NavigationViewController.swift */,
+				43685F6428A7983400957566 /* LoginViewController.swift */,
+				43685F7428A7A2BA00957566 /* WelcomeViewController.swift */,
+				43C9909A28ABB1930070F347 /* UserViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,8 +175,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				43685F6528A7983400957566 /* LoginViewController.swift in Sources */,
+				43C9909B28ABB1930070F347 /* UserViewController.swift in Sources */,
 				43685F7528A7A2BA00957566 /* WelcomeViewController.swift in Sources */,
 				43685F6128A7983400957566 /* AppDelegate.swift in Sources */,
+				43C9909D28ABBEC40070F347 /* TabBarViewController.swift in Sources */,
+				436E66CE28ABFBC1006A1170 /* NavigationViewController.swift in Sources */,
 				43685F6328A7983400957566 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

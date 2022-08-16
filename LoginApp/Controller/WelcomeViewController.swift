@@ -1,9 +1,3 @@
-//
-//  WelcomeViewController.swift
-//  LoginApp
-//
-//  Created by Богдан Анищенков on 13.08.2022.
-//
 
 import UIKit
 
@@ -40,8 +34,8 @@ final class WelcomeViewController: UIViewController {
             blue: 140.0/255.0,
             alpha: 1.0).cgColor
         let colorBottom = UIColor(
-            red: 130.0/255.0,
-            green: 150.0/255.0,
+            red: 190.0/255.0,
+            green: 190.0/255.0,
             blue: 210.0/255.0,
             alpha: 1.0).cgColor
         
