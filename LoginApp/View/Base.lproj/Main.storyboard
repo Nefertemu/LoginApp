@@ -126,7 +126,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="752" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DoK-o4-tDQ">
                                         <rect key="frame" x="0.0" y="434" width="110.5" height="44"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Log Out">
+                                        <buttonConfiguration key="configuration" style="tinted" title="Log Out">
                                             <fontDescription key="titleFontDescription" type="system" pointSize="25"/>
                                         </buttonConfiguration>
                                         <connections>
@@ -247,7 +247,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ol4-oU-1Yo">
                                 <rect key="frame" x="49" y="510" width="277" height="38"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Show more info about me 🙃">
+                                <buttonConfiguration key="configuration" style="tinted" title="Show more info about me 🙃">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
                                 </buttonConfiguration>
                                 <connections>
@@ -256,7 +256,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="G5R-2i-afr"/>
-                        <color key="backgroundColor" red="1" green="0.65851200652908626" blue="0.55246975968474832" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.65449468167692826" green="0.64539430862475777" blue="0.93004261363636365" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="ol4-oU-1Yo" firstAttribute="centerX" secondItem="3KC-De-jox" secondAttribute="centerX" id="8Vb-XE-96P"/>
                             <constraint firstItem="IiC-EF-s7e" firstAttribute="centerX" secondItem="3KC-De-jox" secondAttribute="centerX" id="Bmo-iS-oiR"/>
@@ -299,7 +299,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="qOm-Lf-wUZ"/>
-                        <color key="backgroundColor" red="1" green="0.65851200649999997" blue="0.55246975970000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.65449468170000002" green="0.64539430860000002" blue="0.93004261359999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="qOm-Lf-wUZ" firstAttribute="bottom" secondItem="GyD-Ox-Z7u" secondAttribute="bottom" constant="50" id="3tS-NH-8iE"/>
                             <constraint firstItem="pBJ-fX-4F1" firstAttribute="top" secondItem="qOm-Lf-wUZ" secondAttribute="top" constant="30" id="Cnc-Ev-REr"/>
