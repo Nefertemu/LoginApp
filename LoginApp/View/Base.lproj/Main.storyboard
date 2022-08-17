@@ -3,6 +3,7 @@
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -99,11 +100,11 @@
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="mc6-kb-qde" customClass="WelcomeViewController" customModule="LoginApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nG2-fI-hvt">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="598"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="250" translatesAutoresizingMaskIntoConstraints="NO" id="gJl-xY-DY0">
-                                <rect key="frame" x="132.5" y="84.5" width="110.5" height="478"/>
+                                <rect key="frame" x="132.5" y="60" width="110.5" height="478"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="lF4-Un-6ZF">
                                         <rect key="frame" x="14" y="0.0" width="82.5" height="184"/>
@@ -142,8 +143,21 @@
                             <constraint firstItem="gJl-xY-DY0" firstAttribute="centerX" secondItem="nG2-fI-hvt" secondAttribute="centerX" id="bqc-GH-Qso"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" image="person" catalog="system" selectedImage="person.fill" id="S6Y-pq-lfk">
-                        <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <tabBarItem key="tabBarItem" title="Home" id="S6Y-pq-lfk">
+                        <imageReference key="image" image="person" catalog="system" renderingMode="hierarchical-single">
+                            <hierarchicalColors>
+                                <color white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color systemColor="secondaryLabelColor"/>
+                                <color systemColor="tertiaryLabelColor"/>
+                            </hierarchicalColors>
+                        </imageReference>
+                        <imageReference key="selectedImage" image="person.fill" catalog="system" renderingMode="hierarchical-single">
+                            <hierarchicalColors>
+                                <color white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color systemColor="secondaryLabelColor"/>
+                                <color systemColor="tertiaryLabelColor"/>
+                            </hierarchicalColors>
+                        </imageReference>
                     </tabBarItem>
                     <navigationItem key="navigationItem" id="slo-z8-9VE"/>
                     <connections>
@@ -161,11 +175,11 @@
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="hBB-XY-qXO" customClass="UserViewController" customModule="LoginApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3KC-De-jox">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="598"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ol4-oU-1Yo">
-                                <rect key="frame" x="49" y="304.5" width="277" height="38"/>
+                                <rect key="frame" x="49" y="280" width="277" height="38"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Show more info about me 🙃">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
@@ -193,17 +207,17 @@
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="c6x-jb-ciL" customClass="UserInfoViewController" customModule="LoginApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6Fo-Ul-J53">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="598"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="140" translatesAutoresizingMaskIntoConstraints="NO" id="GyK-l6-GY5">
-                                <rect key="frame" x="30" y="70" width="315" height="507"/>
+                                <rect key="frame" x="30" y="100" width="315" height="398"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="swift-og" translatesAutoresizingMaskIntoConstraints="NO" id="DQ1-ZO-qi9">
-                                        <rect key="frame" x="0.0" y="0.0" width="315" height="183.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="315" height="129"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="OYd-OZ-5Gj">
-                                        <rect key="frame" x="133.5" y="323.5" width="48" height="183.5"/>
+                                        <rect key="frame" x="133.5" y="269" width="48" height="129"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -218,7 +232,7 @@
                             <constraint firstItem="GyK-l6-GY5" firstAttribute="leading" secondItem="6Fo-Ul-J53" secondAttribute="leading" constant="30" id="OGP-4Q-7qN"/>
                             <constraint firstItem="GyK-l6-GY5" firstAttribute="centerX" secondItem="6Fo-Ul-J53" secondAttribute="centerX" id="aCb-st-M7n"/>
                             <constraint firstAttribute="trailing" secondItem="GyK-l6-GY5" secondAttribute="trailing" constant="30" id="hIc-mc-m1A"/>
-                            <constraint firstItem="GyK-l6-GY5" firstAttribute="top" secondItem="6Fo-Ul-J53" secondAttribute="top" constant="70" id="tiL-A9-Rwy"/>
+                            <constraint firstItem="GyK-l6-GY5" firstAttribute="top" secondItem="6Fo-Ul-J53" secondAttribute="top" constant="100" id="tiL-A9-Rwy"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="IZN-hw-dXQ"/>
@@ -236,11 +250,11 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="1Yr-ok-oWq" customClass="TabBarViewController" customModule="LoginApp" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="2Bg-dF-D1J"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="SFW-QD-lqf">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="SFW-QD-lqf">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="selectedImageTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
                         <segue destination="mc6-kb-qde" kind="relationship" relationship="viewControllers" id="f2Q-cd-EmV"/>
@@ -255,7 +269,23 @@
         <scene sceneID="xRy-mg-zGp">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="6BI-IF-kxB" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" image="person" catalog="system" selectedImage="person.fill" id="32T-F2-PUQ"/>
+                    <tabBarItem key="tabBarItem" title="Item" id="32T-F2-PUQ">
+                        <imageReference key="image" image="person" catalog="system" renderingMode="hierarchical-single">
+                            <hierarchicalColors>
+                                <color white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color systemColor="secondaryLabelColor"/>
+                                <color systemColor="tertiaryLabelColor"/>
+                            </hierarchicalColors>
+                        </imageReference>
+                        <color key="badgeColor" systemColor="tintColor"/>
+                        <imageReference key="selectedImage" image="person.fill" catalog="system" renderingMode="hierarchical-single">
+                            <hierarchicalColors>
+                                <color white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color systemColor="secondaryLabelColor"/>
+                                <color systemColor="tertiaryLabelColor"/>
+                            </hierarchicalColors>
+                        </imageReference>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="7To-PP-Atw">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
@@ -282,11 +312,20 @@
         <image name="person" catalog="system" width="128" height="117"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="swift-og" width="1200" height="1200"/>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGray6Color">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tertiaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
