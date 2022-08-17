@@ -9,11 +9,20 @@ import UIKit
 
 final class UserViewController: UIViewController {
     
+    @IBOutlet weak var placeOfBirthLabel: UILabel!
+    @IBOutlet weak var dateOfBirthLabel: UILabel!
+    @IBOutlet weak var hobbyLabel: UILabel!
+    @IBOutlet weak var jobLabel: UILabel!
+    
     var user: User!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        placeOfBirthLabel.text = user.placeOfBirth
+        dateOfBirthLabel.text = user.dateOfBirth
+        hobbyLabel.text = user.hobby
+        jobLabel.text = user.job
         navigationItem.title = user.name + " " + user.surname
     }
     
