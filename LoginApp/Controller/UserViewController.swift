@@ -9,12 +9,12 @@ import UIKit
 
 final class UserViewController: UIViewController {
     
-    var userName = ""
+    var user: User!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.navigationItem.title = userName
+        navigationItem.title = user.name + " " + user.surname
     }
 
     /*

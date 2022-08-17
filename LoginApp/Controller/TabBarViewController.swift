@@ -9,12 +9,12 @@ import UIKit
 
 class TabBarViewController: UITabBarController {
     
-    var userName = ""
+    var user: User!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tabBar.items?[1].title = userName
+        tabBar.items?[1].title = user.name
     }
     
 

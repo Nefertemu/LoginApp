@@ -8,10 +8,18 @@ final class LoginViewController: UIViewController {
     @IBOutlet weak var userNameTF: UITextField!
     @IBOutlet weak var passwordTF: UITextField!
     
-    //MARK: - Public Properties
+    //MARK: - Private Properties
     
-    private let userName = "1"
-    private let password = "1"
+    let user = User.getUser()
+    lazy var userName = user.loginCredentials.userName
+    lazy var password = user.loginCredentials.password
+
+    //MARK: - LifeCycleMethods
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+    }
     
     //MARK: - IBActions
     
@@ -57,17 +65,17 @@ final class LoginViewController: UIViewController {
         guard let tabBar = segue.destination as? UITabBarController else { return }
         
         if let tabBarVC = tabBar as? TabBarViewController {
-            tabBarVC.userName = userName
+            tabBarVC.user = user
         }
         
         guard let viewControllers = tabBar.viewControllers else { return }
         
         for viewController in viewControllers {
             if let welcomeVC = viewController as? WelcomeViewController {
-                welcomeVC.userName = userName
+                welcomeVC.user = user
             } else if let navigationVC = viewController as? UINavigationController {
                 guard let userVC = navigationVC.topViewController as? UserViewController else { return }
-                userVC.userName = userName
+                userVC.user = user
             }
         }
     }

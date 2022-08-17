@@ -1,7 +1,7 @@
 
 import UIKit
 
-final class WelcomeViewController: UIViewController {
+class WelcomeViewController: UIViewController {
     
     //MARK: - IBOutlets
     
@@ -10,15 +10,16 @@ final class WelcomeViewController: UIViewController {
     
     //MARK: - Public Properties
     
-    var userName = ""
+    var user: User!
     
     //MARK: - LifeCycleMethods
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        logOutButton.titleLabel?.textColor = .white
-        welcomeLabel.text = "Welcome, \(userName)!"
         
+        logOutButton.titleLabel?.textColor = .white
+        welcomeLabel.textColor = .white
+        welcomeLabel.text = "Welcome, \(user.name)!"
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -28,16 +29,16 @@ final class WelcomeViewController: UIViewController {
     
     //MARK: Private methods
     
-    private func setGradientBackground() {
+    func setGradientBackground() {
         let colorTop =  UIColor(
-            red: 190.0/255.0,
-            green: 130.0/255.0,
-            blue: 140.0/255.0,
+            red: 50.0/255.0,
+            green: 10.0/255.0,
+            blue: 130.0/255.0,
             alpha: 1.0).cgColor
         let colorBottom = UIColor(
-            red: 190.0/255.0,
-            green: 190.0/255.0,
-            blue: 210.0/255.0,
+            red: 130/255.0,
+            green: 80/255.0,
+            blue: 170/255.0,
             alpha: 1.0).cgColor
         
         let gradientLayer = CAGradientLayer()
