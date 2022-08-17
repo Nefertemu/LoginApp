@@ -9,11 +9,17 @@ import UIKit
 
 final class UserInfoViewController: UIViewController {
     
+    //MARK: - IBOutlets
+
     @IBOutlet weak var swiftLogo: UIImageView!
     @IBOutlet weak var aboutMeLabel: UILabel!
     
-    var user: User!
+    //MARK: - Private Properties
+
+    private var user: User!
     
+    //MARK: - LifeCycleMethods
+
     override func viewDidLoad() {
         super.viewDidLoad()
         

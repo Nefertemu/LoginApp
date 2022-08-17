@@ -13,13 +13,6 @@ final class LoginViewController: UIViewController {
     let user = User.getUser()
     lazy var userName = user.loginCredentials.userName
     lazy var password = user.loginCredentials.password
-
-    //MARK: - LifeCycleMethods
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-    }
     
     //MARK: - IBActions
     

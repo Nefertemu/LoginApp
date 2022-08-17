@@ -9,13 +9,19 @@ import UIKit
 
 final class UserViewController: UIViewController {
     
+    //MARK: - IBOutlets
+
     @IBOutlet weak var placeOfBirthLabel: UILabel!
     @IBOutlet weak var dateOfBirthLabel: UILabel!
     @IBOutlet weak var hobbyLabel: UILabel!
     @IBOutlet weak var jobLabel: UILabel!
     
-    var user: User!
+    //MARK: - Private Properties
+
+    private var user: User!
     
+    //MARK: - LifeCycleMethods
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -26,6 +32,8 @@ final class UserViewController: UIViewController {
         navigationItem.title = user.name + " " + user.surname
     }
     
+    //MARK: - Navigation
+
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         guard let userInfo = segue.destination as? UIViewController else { return }

@@ -10,6 +10,8 @@ import UIKit
 class TabBarViewController: UITabBarController {
     
     var user: User!
+    
+    //MARK: - LifeCycleMethods
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -8,9 +8,9 @@ class WelcomeViewController: UIViewController {
     @IBOutlet weak var welcomeLabel: UILabel!
     @IBOutlet weak var logOutButton: UIButton!
     
-    //MARK: - Public Properties
+    //MARK: - Private Properties
     
-    var user: User!
+    private var user: User!
     
     //MARK: - LifeCycleMethods
     
@@ -25,6 +25,11 @@ class WelcomeViewController: UIViewController {
         setGradientBackground()
         logOutButton.titleLabel?.textColor = .white
         super.viewWillAppear(animated)
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        logOutButton.titleLabel?.textColor = .white
+        super.viewDidAppear(animated)
     }
     
     //MARK: Private methods
