@@ -146,14 +146,14 @@
                     <tabBarItem key="tabBarItem" title="Home" id="S6Y-pq-lfk">
                         <imageReference key="image" image="person" catalog="system" renderingMode="hierarchical-single">
                             <hierarchicalColors>
-                                <color white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color red="0.25490197539999998" green="0.1215686351" blue="0.52941179279999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color systemColor="secondaryLabelColor"/>
                                 <color systemColor="tertiaryLabelColor"/>
                             </hierarchicalColors>
                         </imageReference>
                         <imageReference key="selectedImage" image="person.fill" catalog="system" renderingMode="hierarchical-single">
                             <hierarchicalColors>
-                                <color white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color red="0.2588235438" green="0.1215686351" blue="0.52941179279999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color systemColor="secondaryLabelColor"/>
                                 <color systemColor="tertiaryLabelColor"/>
                             </hierarchicalColors>
@@ -210,34 +210,35 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="598"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="140" translatesAutoresizingMaskIntoConstraints="NO" id="GyK-l6-GY5">
-                                <rect key="frame" x="30" y="100" width="315" height="398"/>
-                                <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="swift-og" translatesAutoresizingMaskIntoConstraints="NO" id="DQ1-ZO-qi9">
-                                        <rect key="frame" x="0.0" y="0.0" width="315" height="129"/>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="OYd-OZ-5Gj">
-                                        <rect key="frame" x="133.5" y="269" width="48" height="129"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="swift-og" translatesAutoresizingMaskIntoConstraints="NO" id="pBJ-fX-4F1">
+                                <rect key="frame" x="112.5" y="86" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="B5A-5C-yq8"/>
+                                    <constraint firstAttribute="height" constant="150" id="Py1-FO-6xD"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="GyD-Ox-Z7u">
+                                <rect key="frame" x="16" y="246" width="343" height="302"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="qOm-Lf-wUZ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="GyK-l6-GY5" firstAttribute="centerY" secondItem="6Fo-Ul-J53" secondAttribute="centerY" id="EB4-GK-BZx"/>
-                            <constraint firstItem="GyK-l6-GY5" firstAttribute="leading" secondItem="6Fo-Ul-J53" secondAttribute="leading" constant="30" id="OGP-4Q-7qN"/>
-                            <constraint firstItem="GyK-l6-GY5" firstAttribute="centerX" secondItem="6Fo-Ul-J53" secondAttribute="centerX" id="aCb-st-M7n"/>
-                            <constraint firstAttribute="trailing" secondItem="GyK-l6-GY5" secondAttribute="trailing" constant="30" id="hIc-mc-m1A"/>
-                            <constraint firstItem="GyK-l6-GY5" firstAttribute="top" secondItem="6Fo-Ul-J53" secondAttribute="top" constant="100" id="tiL-A9-Rwy"/>
+                            <constraint firstItem="qOm-Lf-wUZ" firstAttribute="bottom" secondItem="GyD-Ox-Z7u" secondAttribute="bottom" constant="50" id="3tS-NH-8iE"/>
+                            <constraint firstItem="pBJ-fX-4F1" firstAttribute="top" secondItem="qOm-Lf-wUZ" secondAttribute="top" constant="30" id="Cnc-Ev-REr"/>
+                            <constraint firstItem="GyD-Ox-Z7u" firstAttribute="centerX" secondItem="6Fo-Ul-J53" secondAttribute="centerX" id="EPi-2m-AzS"/>
+                            <constraint firstItem="GyD-Ox-Z7u" firstAttribute="leading" secondItem="qOm-Lf-wUZ" secondAttribute="leading" constant="16" id="XsH-kG-24P"/>
+                            <constraint firstItem="GyD-Ox-Z7u" firstAttribute="top" secondItem="pBJ-fX-4F1" secondAttribute="bottom" constant="10" id="q5Q-1O-fAv"/>
+                            <constraint firstItem="pBJ-fX-4F1" firstAttribute="centerX" secondItem="6Fo-Ul-J53" secondAttribute="centerX" id="xCX-hW-nDU"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="IZN-hw-dXQ"/>
                     <connections>
-                        <outlet property="swiftLogo" destination="DQ1-ZO-qi9" id="d8E-lA-KbP"/>
+                        <outlet property="aboutMeLabel" destination="GyD-Ox-Z7u" id="jqC-pc-w8a"/>
+                        <outlet property="swiftLogo" destination="pBJ-fX-4F1" id="fLJ-zl-dw1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RZ7-ne-lVm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -254,7 +255,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="selectedImageTintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" red="0.25490197539999998" green="0.1215686351" blue="0.52941179279999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </tabBar>
                     <connections>
                         <segue destination="mc6-kb-qde" kind="relationship" relationship="viewControllers" id="f2Q-cd-EmV"/>
@@ -272,7 +273,7 @@
                     <tabBarItem key="tabBarItem" title="Item" id="32T-F2-PUQ">
                         <imageReference key="image" image="person" catalog="system" renderingMode="hierarchical-single">
                             <hierarchicalColors>
-                                <color white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color red="0.25490197539999998" green="0.1215686351" blue="0.52941179279999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color systemColor="secondaryLabelColor"/>
                                 <color systemColor="tertiaryLabelColor"/>
                             </hierarchicalColors>
@@ -280,7 +281,7 @@
                         <color key="badgeColor" systemColor="tintColor"/>
                         <imageReference key="selectedImage" image="person.fill" catalog="system" renderingMode="hierarchical-single">
                             <hierarchicalColors>
-                                <color white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color red="0.25490197539999998" green="0.1215686351" blue="0.52941179279999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color systemColor="secondaryLabelColor"/>
                                 <color systemColor="tertiaryLabelColor"/>
                             </hierarchicalColors>
