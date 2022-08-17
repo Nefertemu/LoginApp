@@ -16,7 +16,7 @@ final class UserInfoViewController: UIViewController {
     
     //MARK: - Private Properties
 
-    private var user: User!
+    var user: User!
     
     //MARK: - LifeCycleMethods
 

@@ -256,7 +256,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="G5R-2i-afr"/>
-                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                        <color key="backgroundColor" red="1" green="0.65851200652908626" blue="0.55246975968474832" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="ol4-oU-1Yo" firstAttribute="centerX" secondItem="3KC-De-jox" secondAttribute="centerX" id="8Vb-XE-96P"/>
                             <constraint firstItem="IiC-EF-s7e" firstAttribute="centerX" secondItem="3KC-De-jox" secondAttribute="centerX" id="Bmo-iS-oiR"/>
@@ -299,7 +299,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="qOm-Lf-wUZ"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="1" green="0.65851200649999997" blue="0.55246975970000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="qOm-Lf-wUZ" firstAttribute="bottom" secondItem="GyD-Ox-Z7u" secondAttribute="bottom" constant="50" id="3tS-NH-8iE"/>
                             <constraint firstItem="pBJ-fX-4F1" firstAttribute="top" secondItem="qOm-Lf-wUZ" secondAttribute="top" constant="30" id="Cnc-Ev-REr"/>
@@ -395,9 +395,6 @@
         </systemColor>
         <systemColor name="systemGray6Color">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemYellowColor">
-            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="tertiaryLabelColor">
             <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
