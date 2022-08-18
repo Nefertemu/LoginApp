@@ -17,19 +17,12 @@ class WelcomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        welcomeLabel.textColor = .white
         welcomeLabel.text = "Welcome, \(user.name)!"
     }
     
     override func viewWillAppear(_ animated: Bool) {
         setGradientBackground()
-        logOutButton.titleLabel?.textColor = .white
         super.viewWillAppear(animated)
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        logOutButton.titleLabel?.textColor = .white
-        super.viewDidAppear(animated)
     }
     
     //MARK: Private methods
