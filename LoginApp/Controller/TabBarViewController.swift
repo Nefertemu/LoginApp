@@ -16,6 +16,6 @@ class TabBarViewController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tabBar.items?[1].title = user.name + " " + user.surname
+//        tabBar.items?.last?.title = user.name + " " + user.surname
     }
 }

@@ -30,6 +30,7 @@ final class UserViewController: UIViewController {
         hobbyLabel.text = user.hobby
         jobLabel.text = user.job
         navigationItem.title = user.name + " " + user.surname
+
     }
     
     //MARK: - Navigation

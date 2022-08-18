@@ -10,7 +10,7 @@ final class LoginViewController: UIViewController {
     
     //MARK: - Private Properties
     
-    let user = User.getUser()
+    private let user = User.getUser()
     lazy var userName = user.loginCredentials.userName
     lazy var password = user.loginCredentials.password
     
@@ -56,10 +56,6 @@ final class LoginViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         guard let tabBar = segue.destination as? UITabBarController else { return }
-        
-        if let tabBarVC = tabBar as? TabBarViewController {
-            tabBarVC.user = user
-        }
         
         guard let viewControllers = tabBar.viewControllers else { return }
         

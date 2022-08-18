@@ -18,6 +18,8 @@ final class WelcomeViewController: UIViewController {
         super.viewDidLoad()
         
         welcomeLabel.text = "Welcome, \(user.name)!"
+        tabBarController?.tabBar.items?.last?.title = user.name + " " + user.surname
+
     }
     
     override func viewWillAppear(_ animated: Bool) {
