@@ -1,7 +1,7 @@
 
 import UIKit
 
-class WelcomeViewController: UIViewController {
+final class WelcomeViewController: UIViewController {
     
     //MARK: - IBOutlets
     
@@ -29,14 +29,14 @@ class WelcomeViewController: UIViewController {
     
     func setGradientBackground() {
         let colorTop =  UIColor(
-            red: 50.0/255.0,
-            green: 10.0/255.0,
-            blue: 130.0/255.0,
+            red: 40.0/255.0,
+            green: 70.0/255.0,
+            blue: 100.0/255.0,
             alpha: 1.0).cgColor
         let colorBottom = UIColor(
-            red: 130/255.0,
-            green: 80/255.0,
-            blue: 170/255.0,
+            red: 15/255.0,
+            green: 40/255.0,
+            blue: 90/255.0,
             alpha: 1.0).cgColor
         
         let gradientLayer = CAGradientLayer()
